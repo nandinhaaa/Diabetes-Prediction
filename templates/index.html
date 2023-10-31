@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Preditor de Diabetes</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='diabetes-favicon.ico.png') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Website Title -->
+    <div class="container">
+        <h2 class='container-heading'><span class="heading_font">Preditor de Diabetes</span></h2>
+        <div class='description'>
+            <p>Um aplicativo Web de aprendizado de máquina, criado com Flask.</p>
+        </div>
+    </div>
+
+    <!-- Text Area -->
+    <div class="ml-container">
+        <form action="{{ url_for('predict') }}" method="POST" onsubmit="return validateForm();">
+            <input class="form-input" type="text" name="pregnancies" placeholder="Numero de gravizes ex: 0" required><br>
+            <input class="form-input" type="text" name="glucose" placeholder="Glicose (mg/dL) ex: 80" required><br>
+            <input class="form-input" type="text" name="bloodpressure" placeholder="Pressão Sanguinea(mmHg) ex: 80" required><br>
+            <input class="form-input" type="text" name="skinthickness" placeholder="Epessura da pele (mm) ex: 20" required><br>
+            <input class="form-input" type="text" name="insulin" placeholder="Nivel de Insulina (IU/mL) ex: 80" required><br>
+            <input class="form-input" type="text" name="bmi" placeholder="IMC (kg/m²) ex: 23.1" required><br>
+            <input class="form-input" type="text" name="dpf" placeholder="Função de Histórico Familiar de Diabetes ex: 0.52" required><br>
+            <input class="form-input" type="text" name="age" placeholder="Idade (anos) ex: 34" required><br>
+            <input type="submit" class="my-cta-button" value="Predict">
+        </form>
+    </div>
+
+    <script>
+        function validateForm() {
+            var inputs = document.getElementsByClassName('form-input');
+            for (var i = 0; i < inputs.length; i++) {
+                if (inputs[i].value.trim() === '') {
+                    alert('Por favor, preencha todos os campos.');
+                    return false; // Impede o envio do formulário se algum campo estiver vazio.
+                }
+            }
+            return true; // Permite o envio do formulário se todos os campos estiverem preenchidos.
+        }
+    </script>
+
+    <!-- Footer -->
+    <div class='footer'>
+        <div class="contact">
+            <a target="_blank" href="https://github.com/nandinhaaa/Diabetes-Prediction"><i class="fab fa-github fa-lg contact-icon"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/maria-fernanda-gon%C3%A7alves-94092b234"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+        </div>
+        <p class='footer-description'>Feito por: Nanda.</p>
+    </div>
+</body>
+</html>
