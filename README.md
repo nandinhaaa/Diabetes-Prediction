@@ -24,4 +24,6 @@
 ## Conclusão 
 O modelo de predição de diabetes tem como finalidade realizar previsões sobre a probabilidade de uma pessoa ter diabetes com base em diversas características fornecidas como entrada. Essa previsão pode ser útil para identificar indivíduos que possuem um maior risco de desenvolver diabetes, permitindo intervenções precoces, monitoramento mais rigoroso ou aconselhamento médico personalizado.
 
+Esses modelos são ferramentas de suporte à decisão e não substituem a orientação médica especializada.
+
 ![alice](https://github.com/nandinhaaa/Diabetes-Prediction/assets/91507393/0f89a529-a768-4ec1-b31a-cede9e87b962)
