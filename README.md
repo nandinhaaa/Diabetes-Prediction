@@ -21,7 +21,7 @@
 * **Kit Font Awesome (`<script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>`):**
   - Conjunto de ícones para design responsivo em web.
  
-### Conclusão 
+## Conclusão 
 O modelo de predição de diabetes tem como finalidade realizar previsões sobre a probabilidade de uma pessoa ter diabetes com base em diversas características fornecidas como entrada. Essa previsão pode ser útil para identificar indivíduos que possuem um maior risco de desenvolver diabetes, permitindo intervenções precoces, monitoramento mais rigoroso ou aconselhamento médico personalizado.
 
 ![alice](https://github.com/nandinhaaa/Diabetes-Prediction/assets/91507393/0f89a529-a768-4ec1-b31a-cede9e87b962)
